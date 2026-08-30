@@ -1,0 +1,77 @@
+.notfound-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.notfound-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.notfound-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-weight: 900;
+  font-size: clamp(4rem, 15vw, 14rem);
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.notfound-text-left {
+  left: clamp(1rem, 4vw, 4rem);
+}
+
+.notfound-text-right {
+  right: clamp(1rem, 4vw, 4rem);
+  transform: translate(50px, -50%);
+}
+
+.notfound-message {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.notfound-message h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: #fff;
+}
+
+.notfound-message p {
+  margin: 0 0 1.25rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.notfound-message button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  border: none;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+}
+
+.notfound-message button:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
